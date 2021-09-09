@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
@@ -30,37 +32,39 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.0.0</version>
-            </plugin>
-    <plugin>
-    <groupId>org.mule.tools.maven</groupId>
-    <artifactId>mule-maven-plugin</artifactId>
-    <version>3.3.5</version>
-    <extensions>true</extensions>
-    <configuration>
-        <cloudHubDeployment>
-            <uri>https://anypoint.mulesoft.com</uri>
-            <muleVersion>4.3.0</muleVersion>
-            <username>zunzimul</username>
-            <password>Rushiesh@99</password>
-            <applicationName>poc1IplFROMGIT</applicationName>
-            <environment>Sandbox</environment>
-            <workerType>MICRO</workerType>
-            <objectStoreV2>true</objectStoreV2>
-        </cloudHubDeployment>
-    </configuration>
-</plugin>
-            <plugin>
-                <groupId>org.mule.tools.maven</groupId>
-                <artifactId>mule-maven-plugin</artifactId>
-                <version>${mule.maven.plugin.version}</version>
-                <extensions>true</extensions>
-            </plugin>
-        </plugins>
- 
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-clean-plugin</artifactId>
+						<version>3.0.0</version>
+					</plugin>
+					<plugin>
+						<groupId>org.mule.tools.maven</groupId>
+						<artifactId>mule-maven-plugin</artifactId>
+						<version>3.3.5</version>
+						<extensions>true</extensions>
+						<configuration>
+							<cloudHubDeployment>
+								<uri>https://anypoint.mulesoft.com</uri>
+								<muleVersion>${mule.version}</muleVersion>
+								<username>${anypoint.username}</username>
+								<password>${anypoint.password</password>
+								<applicationName>${appname}</applicationName>
+								<environment>${env}</environment>
+								<workerType>${vCore}</workerType>
+								<objectStoreV2>true</objectStoreV2>
+								<businessGroup>${business}</businessGroup>
+								<workers>${workers}</workers>
+							</cloudHubDeployment>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.mule.tools.maven</groupId>
+						<artifactId>mule-maven-plugin</artifactId>
+						<version>${mule.maven.plugin.version}</version>
+						<extensions>true</extensions>
+					</plugin>
+				</plugins>
+
 			</plugin>
 		</plugins>
 	</build>
