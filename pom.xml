@@ -31,42 +31,40 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-clean-plugin</artifactId>
-						<version>3.0.0</version>
-					</plugin>
-					<plugin>
-						<groupId>org.mule.tools.maven</groupId>
-						<artifactId>mule-maven-plugin</artifactId>
-						<version>3.3.5</version>
-						<extensions>true</extensions>
-						<configuration>
-							<cloudHubDeployment>
-								<uri>https://anypoint.mulesoft.com</uri>
-								<muleVersion>${mule.version}</muleVersion>
-								<username>${anypoint.username}</username>
-								<password>${anypoint.password</password>
-								<applicationName>${appname}</applicationName>
-								<environment>${env}</environment>
-								<workerType>${vCore}</workerType>
-								<objectStoreV2>true</objectStoreV2>
-								<businessGroup>${business}</businessGroup>
-								<workers>${workers}</workers>
-							</cloudHubDeployment>
-						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.mule.tools.maven</groupId>
-						<artifactId>mule-maven-plugin</artifactId>
-						<version>${mule.maven.plugin.version}</version>
-						<extensions>true</extensions>
-					</plugin>
-				</plugins>
-
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.3.5</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password</password>
+						<applicationName>${appname}</applicationName>
+						<environment>${env}</environment>
+						<workerType>${vCore}</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<businessGroup>${business}</businessGroup>
+						<workers>${workers}</workers>
+					</cloudHubDeployment>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
 			</plugin>
 		</plugins>
+
 	</build>
 
 	<dependencies>
