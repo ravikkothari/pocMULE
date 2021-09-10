@@ -38,7 +38,7 @@
 					<muleVersion>4.3.0</muleVersion>
 					<username>ravikk</username>
 					<password>Ravi@1998</password>
-					<applicationName>poc2FROMGIT</applicationName>
+					<applicationName>poc2CICD</applicationName>
 					<environment>Sandbox</environment>
 					<workers>1</workers>
 					<workerType>MICRO</workerType>
